@@ -1,0 +1,48 @@
+@mixin section {
+    padding: #{scaleValue(80)} #{scaleValue(160)};
+    padding-bottom: #{scaleValue(35)};
+}
+
+@mixin copyarea {
+    text-align: center;
+    margin-bottom: #{scaleValue(80)};
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin h2 {
+    font-family: 'Baskervville', serif;
+    font-size: #{scaleValue(35)};
+    letter-spacing: #{scaleValue(3)};
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    margin-bottom: #{scaleValue(35)};
+    color: $font-color;
+}
+
+@mixin baseimg {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+@mixin cardlabel {
+    text-align: center;
+    margin-top: #{scaleValue(25)};
+    text-transform: uppercase;
+    font-size: #{scaleValue(15)};
+    letter-spacing: #{scaleValue(4)};
+    font-weight: 500;
+    line-height: #{scaleValue(35)};
+}
+
+@mixin sectionline {
+    display: inline-block;
+    width: 57%;
+    height: #{scaleValue(2)};
+    background: rgba($black, .4);
+    border-radius: 3rem;
+}
