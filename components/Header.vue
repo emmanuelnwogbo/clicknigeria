@@ -29,7 +29,12 @@
                 </span>  
             </div>
             <div class="header__bottomarea">
-                <span class="logo">GIGI & OLIVE</span>
+                <!--<span class="logo">CLICK</span>-->
+               <div class="header__logoarea">
+                    <figure class="header__logo">
+                        <img src="@/assets/imgs/click.png" class="header__logo"/>
+                    </figure>
+               </div>
             </div>
             <div class="header__bottomarea">
                 <span class="link">
@@ -84,6 +89,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
     }
 
     &__toparea {
@@ -118,6 +124,27 @@
                     letter-spacing: #{scaleValue(3)};
                 }
             }
+        }
+    }
+
+    &__logoarea {
+        display: flex;
+        align-items: center;
+        height: #{scaleValue(45)};
+        width: #{scaleValue(150)};
+
+        transform: translateY(#{scaleValue(8)});
+    }
+
+    &__logo {
+        height: #{scaleValue(250)};
+        width: #{scaleValue(250)};
+        background: transparent;
+
+        & img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
         }
     }
 
